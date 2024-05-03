@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
     "start": "tsx watch src/server.ts",
-    "build": ""
+    "build": "npm start src/server.ts"
   },
   "keywords": [],
   "author": "",
