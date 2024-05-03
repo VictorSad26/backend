@@ -1,4 +1,4 @@
-import fastify from "fastify";
+import fastify from 'fastify';
 import { routes } from "./routes";
 import cors from '@fastify/cors'
 
@@ -12,8 +12,9 @@ const start = async () => {
     await app.register(cors);
     await app.register(routes);
 
+
     try {
-        await app.listen({ port: 3333 })
+        const port = process.env.PORT || 3333
     } catch (error) {
         process.exit(1) // sudo npm install @types/node --save
     }
