@@ -4,8 +4,7 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
-    "start": "tsx watch src/server.ts",
-    "build": "npm start src/server.ts"
+    "start": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "",
