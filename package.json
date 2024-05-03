@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
-      "build": "tsc --build",
-      "clean": "tsc --build --clean",
-      "start": "tsc && node dist/server.js"
+      "build": "tsc -w",
+      "dev": "nodemon dist/server.js",
+      "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
