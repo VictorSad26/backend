@@ -14,7 +14,7 @@ const start = async () => {
 
 
     try {
-        const port = process.env.PORT || 4000
+        await app.listen({ port: 4000 })
     } catch (error) {
         process.exit(1) // sudo npm install @types/node --save
     }
